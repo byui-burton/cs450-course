@@ -257,7 +257,7 @@ font-weight:700;
  * TABLE
  ********************************/
 
-table#bh {
+table.bh {
   width: 100%;
   margin: 0px auto;
   border-collapse: collapse;
@@ -270,7 +270,7 @@ table#bh {
  * FIRST ROW
  ********************************/
 
-table#bh tr:first-child th {
+table.bh tr:first-child th {
   color: white;
   background-color: rgb(0, 46, 71);
   font-size: 14px;
@@ -282,7 +282,7 @@ table#bh tr:first-child th {
  * HEADERS
  ********************************/
 
-table#bh th {
+table.bh th {
   color: rgb(230, 230, 230);
   background-color: rgb(0, 59, 91);
   border-top: 1px solid rgb(0, 62, 96);
@@ -299,13 +299,13 @@ table#bh th {
  * BODY CELLS
  ********************************/
  
-table#bh tbody.hover tr:hover > td {
+table.bh tbody.hover tr:hover > td {
   cursor: pointer;
   font-size: 12px;
   background-color: rgb(200, 200, 200) !important;
 }
 
-table#bh tr:nth-child(odd) td {
+table.bh tr:nth-child(odd) td {
   background-color: rgb(230, 230, 230);
   font-size: 12px;
   vertical-align: middle;
@@ -314,7 +314,7 @@ table#bh tr:nth-child(odd) td {
   padding: 8px;
 }
 
-table#bh tr:nth-child(even) td {
+table.bh tr:nth-child(even) td {
   background-color: rgb(245, 245, 245);
   font-size: 12px;
   vertical-align: middle;
