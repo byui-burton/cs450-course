@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 450 - Prove</title>
+    <link rel="stylesheet" type="text/css" href="../course/style.css" />
+</head>
+
+<body>
+    <div id= "main" class="splash">
+
+<!--         <div id="header">
+            <img class="banner" alt="CS 450 Banner" title="CS 450 Banner" src="../course/cs450.jpg" />
+        </div>
+ -->
+        <article>
+
+            <h1>06 Prove : Assignment - Neural Network Part 2</h1>
+
+
+            <h2>Objective</h2>
+            <p>Understand Neural Networks, in particular, back-propagation for multi-layer perceptron networks.</p>
+            <p>Please note that you have 3 weeks to implement and experiment with this algorithm. This is because it can be a challenge! <b>This is likely the most challenging individual programming assignment we will do this semester</b>. Do not put this off!</p>
+            <h2>Instructions</h2>
+            <p>You will be adding to your experiment shell from the previous assignment, by implementing a multi-layer perceptron neural network.</p>
+            <p>You will finish the assignment next week (and there is a separate assessment for that), however, to help encourage you to make good progress this week, you need to have at least the following completed this week:</p>
+            <ol>
+                <li>Build a classifier with an arbitrary number of layers, and an arbitrary number of nodes in each layer.</li>
+                <ol>
+                    <li>For example: 2 Layers (1 hidden, 1 output), with 4 nodes in the hidden layer, and 3 output nodes.</li>
+                    <li>Or 3 Layers (2 hidden, 1 output), with 2 nodes in the first, 3 in the second, 1 in the third.</li>
+                    <li>Or 2 Layers (1 hidden, 1 output) with 8 nodes in the hidden layer, and 2 in the output.</li>
+                    <li>Etc.</li>
+                </ol>
+                <li>The number of weights for the first layer should be determined by the number of input attributes.</li>
+                <li>Biases are present at every layer.</li>
+                <li>You should be able to complete the feed-forward portion of the algorithm, looping through each node of each layer to produce values at the output layer.</li>
+                <li>For your activation function, use the sigmoid function: f(x) = 1 / (1 + e^-x)</li>
+                <li>You should be able to classify an instance using your network. Please note that at this point, you will not have implemented any weight updates, so your network will essentially be randomly computing an answer, but it should be able to classify a given instance.</li>
+                <li>Using the classification described, you should be able to classify a complete dataset and calculate the accuracy. (E.g., try it on the iris dataset)</li>
+                <li>You should be able to handle both numeric and nominal input data.</li>
+            </ol>
+            <div>Please note that this week, we are still not implementing the error calculation and back-propagation. We will finish that up next week and then have some time to experiment with different datasets and network configurations. If you can get that part done this week as well, you will be better off, but the minimum standard for this week is to complete the feed forward network as described above.</div>
+            <h2>Experiment Guidelines</h2>
+            <p>Because we are not implementing a complete algorithm at this point, you are not expected to experiment with different datasets and parameters at this point. Nor does this assignment specifically require (or reward) going above and beyond. That will be addressed in the assignment for next week.</p>
+            <p>You are, of course, encouraged to go beyond these deliverables because that will help you finish the algorithm for next week.</p>
+            <h2>Submission</h2>
+            <p>When complete, answer the accompanying questions in the I-Learn assessment. They simply ask whether or not the above items have been completed.</p>
+
+
+        </article>
+    </div>
+
+
+</body>
+
+</html>

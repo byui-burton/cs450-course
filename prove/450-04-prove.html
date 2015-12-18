@@ -15,13 +15,350 @@
  -->
         <article>
 
-            <h1>03 Prove : Assignment - Decision Tree Classifier</h1>
+            <h1>04 Prove : Assignment - Naive Bayes Classifier</h1>
 
             <h2>Objective</h2>
-            <p>Content placeholder.</p>
-
+            <p>Understand the basics of the naive Bayes algorithm.</p>
+            <p>Please note that this is not a programming assignment. Instead, you will walk through the basics of the algorithm using a spreadsheet. This exercise is intentionally lighter than other weeks because you will be finishing your more involved Decision Tree assignment.</p>
+            <p>In case it is helpful, here is a link to the spreadsheet we did in class:&nbsp;<a href="https://docs.google.com/spreadsheets/d/13KRe9-Yle7YdJR9ozw_RRP09aKfc2GeRd38s8SULDnc/edit?usp=sharing" target="_blank">https://docs.google.com/spreadsheets/d/13KRe9-Yle7YdJR9ozw_RRP09aKfc2GeRd38s8SULDnc/edit?usp=sharing</a></p>
+            <h2>Instructions</h2>
+            <p>Use a spreadsheet to track the probabilities of the of the following attributes. Then, using naive Bayes, make calculations by hand (in the spreadsheet), to determine the classification of the provided data points.</p>
+            <p>For this exercise, use the following simplistic data set:</p>
+            <table style="width: 544px;" border="0" cellspacing="0" cellpadding="0">
+                <colgroup>
+                    <col span="6" width="91" /> </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>Row #</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Credit Score</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Income</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Collateral</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Job History</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Should Loan</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>1</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Short</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>2</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>3</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Short</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>4</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>5</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>6</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Average</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>7</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Average</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>8</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Average</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Short</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>9</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Average</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>10</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Average</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>11</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>12</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>13</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>High</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Good</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Short</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="oa1" width="91" height="24">
+                            <p>14</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Low</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Poor</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>Long</p>
+                        </td>
+                        <td class="oa1" width="91">
+                            <p>No</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&nbsp;</p>
+            <p>You should make a prediction for the following instances:</p>
+            <p>#1</p>
+            <p>Credit Score: Good
+                <br />Income: High
+                <br />Collateral: Good
+                <br />Job History: Long</p>
+            <p>#2</p>
+            <p>Credit Score: Average
+                <br />Income: Low
+                <br />Collateral: Good
+                <br />Job History: Short</p>
+            <div>#3</div>
+            <div>
+                <p>Credit Score: Low
+                    <br />Income: High
+                    <br />Collateral: Poor
+                    <br />Job History: Short</p>
+            </div>
             <h2>Submission</h2>
-            <p>When complete, push your code to a public GitHub repository and answer the following questions.</p>
+            <p>When complete, make sure your spreadsheet is publicly accessible via the web (e.g., Google spreadsheet, .xls file in a public GitHub or Dropbox folder, etc.).</p>
+            <p>Then, answer the following questions, giving your prediction for each value and a link to your spreadsheet. <b>Your spreadsheet must clearly show the following</b> to receive full credit for this assignment:</p>
+            <ol>
+                <li>The class-conditional probabilities for each attribute.</li>
+                <li>The calculations for Yes/No classifications for each of the 3 items to predict. In other words, six formulas/results that are clearly marked.</li>
+            </ol>
+            <div>Please note that by the nature of this assignment, it is difficult to "show creativity" and "excel above and beyond the requirements," so there is not necessarily an expectation for that here.</div>
+
+
         </article>
     </div>
 

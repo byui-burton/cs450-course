@@ -15,13 +15,59 @@
  -->
         <article>
 
-            <h1>03 Prove : Assignment - Decision Tree Classifier</h1>
+            <h1>09 Prove : Assignment - Clustering the States</h1>
 
             <h2>Objective</h2>
-            <p>Content placeholder.</p>
-
+            <p>Understand the basics of clustering using&nbsp;<i>k</i>-means and agglomerative hierarchical clustering.</p>
+            <h2>Instructions</h2>
+            <p>This week you will look at different ways to cluster data regarding the United States.&nbsp;Once again, we will not be implementing any algorithms this week, but will be experimenting with them in R.</p>
+            <p>The dataset is included in the datasets package:</p>
+            <p>library(datasets)<br />myData = state.x77</p>
+            <p>This dataset has the following attributes for each of the 50 States:</p>
+            <ul>
+                <li>Population</li>
+                <li>Income</li>
+                <li>Illiteracy</li>
+                <li>Life Exp</li>
+                <li>Murder</li>
+                <li>HS Grad</li>
+                <li>Frost</li>
+                <li>Area</li>
+            </ul>
+            <p>Your instructions are to play around with the kmeans function and the hclust function to learn more about this dataset and about the clustering process. Please follow the steps in the Experiment Guidelines, and then look for ways to do additional analysis on this and other datasets.</p>
+            <p>Please refer to <a href="../prepare/450-09-clustering-hints.html" target="_BLANK">A few helpful hints for doing clustering in R</a> in I-Learn for some basic syntax to help get you started.
+                <a></a>
+            </p>
+            <h2>Experiment Guidelines</h2>
+            <p>To help get you started, please follow the prescribed steps below:</p>
+            <p>Agglomerative Hierarchical Clustering</p>
+            <ol>
+                <li>Load the dataset</li>
+                <li>Use hierarchical clustering to cluster the data on all attributes and produce a dendrogram</li>
+                <li>Repeat the previous item with a normalized dataset and note any differences</li>
+                <li>Remove "Area" from the attributes and re-cluster (and note any differences)</li>
+                <li>Cluster only on the Frost attribute and observe the results</li>
+            </ol>
+            <div>Using <i>k</i>-means</div>
+            <div>&nbsp;</div>
+            <div>
+                <ol>
+                    <li>Make sure to use a normalized version of the dataset.</li>
+                    <li>Using k-means, cluster the data into 3 clusters. Note the size of each cluster and the mean values. Do you have any insight into why they were divided this way?</li>
+                    <li>Using a for loop, repeat the clustering process for k = 1 to 25, and plot the total within-cluster sum of squares error for each k-value.</li>
+                    <li>Evaluate the plot from the previous item, and choose an appropriate k-value using the "elbow method" mentioned in your reading. Then re-cluster a single time using that k-value. Use this clustering for the remaining questions.</li>
+                    <li>List the states in each cluster.</li>
+                    <li>Use "clusplot" to plot a 2D representation of the clustering.</li>
+                    <li>Analyze the centers of each of these clusters. Can you identify any insight into this clustering?</li>
+                </ol>
+                <div>After going through these steps, you are encouraged to continue on to analyze this and other datasets further to see if you can find other interesting things.</div>
+            </div>
             <h2>Submission</h2>
-            <p>When complete, push your code to a public GitHub repository and answer the following questions.</p>
+            <p>Prepare a PDF document with graphs and discussion for each of the points above. Then, list anything additional you have done (above and beyond these requirements).</p>
+            <p>Finally, please state which category you feel best describes your assignment and give a 1-2 sentence justification for your choice: A) Some attempt was made, B) Developing, but significantly deficient, C) Slightly deficient, but still mostly adequate, D) Meets requirements, E) Shows creativity and excels above and beyond requirements.</p>
+            <p>Upload this document to I-Learn in the space provided.</p>
+
+
         </article>
     </div>
 

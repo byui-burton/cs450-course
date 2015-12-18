@@ -18,10 +18,58 @@
             <h1>03 Prove : Assignment - Decision Tree Classifier</h1>
 
             <h2>Objective</h2>
-            <p>Content placeholder.</p>
-
+            <p>Understand the ID3 Decision Tree algorithm.</p>
+            <p>Please note that you have 2 weeks to implement and experiment with this algorithm. This is because it can be a challenge! Do not put this off until next week. You should try to complete the coding portion this week to leave next week for experimentation.</p>
+            <h2>Instructions</h2>
+            <p>Add to your experiment shell from the previous assignment. Implement a new algorithm, the ID3 Decision Tree.</p>
+            <h2>Experiment Guidelines</h2>
+            <p>After implementing the algorithm, use it to classify the following datasets and use 10-fold cross validation to evaluate results:</p>
+            <ol>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Iris" target="_blank" title="Iris Dataset">Iris</a> (our old friend!)</li>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Lenses" target="_blank" title="Lenses dataset">Lenses</a>&nbsp;(can also be found in the Weka datasets directory as: contact-lenses.arff)</li>
+                <li><a href="https://archive.ics.uci.edu/ml/machine-learning-databases/voting-records/" target="_blank" title="Voting">Voting</a>&nbsp;(can also be found in the Weka datasets directory as: vote.arff)</li>
+            </ol>
+            <p>Optional:</p>
+            <ol>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Credit+Approval" target="_blank" title="Credit Screening">Credit Screening</a></li>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Chess+%28King-Rook+vs.+King%29" target="_blank" title="Chess Dataset">Chess</a> (King-pawn vs. King)</li>
+            </ol>
+            <p>For each one, experiment with different parameters for the algorithm.</p>
+            <p>For each dataset, you should produce some text version of the decision tree that is induced by your algorithm (which will be submitted in an essay question box in this assessment).</p>
+            <p><span style="font-size: 10pt;">In addition, for each one, compare your implementation of the ID3 algorithm to an existing one (e.g., Weka) and compare/contrast the results.</span></p>
+            <h2>Questions for Consideration</h2>
+            <ul>
+                <li>How should numerical data be handled?</li>
+                <li>How should missing data be handled?</li>
+                <li>Would pruning be helpful? If so, what approach would you use?</li>
+            </ul>
+            <h2>Requirements</h2>
+            <p>As always, you are encouraged to go above and beyond and take initiative in your learning. As described in the syllabus, meeting the minimum standard requirements can qualify you for 93%, but going above and beyond is necessary to get 100%. The following are the expectations for a minimum standard, with a few suggestions for going above and beyond.</p>
+            <h3>Minimum Standard Requirements</h3>
+            <ul>
+                <li><span style="font-size: 10pt;">Implement the basic ID3 decision tree algorithm</span></li>
+                <li>Handle nominal and numeric data (if you choose, numeric data can be handled via pre-processing)</li>
+                <li>Handle missing data</li>
+                <li><span style="font-size: 10pt;">Produce a textual view of your resulting tree</span></li>
+                <li><span style="font-size: 10pt;">Basic experimentation</span></li>
+                <ul>
+                    <li><span style="font-size: 10pt;">Use the supplied datasets</span></li>
+                    <li><span style="font-size: 10pt;">10-fold cross validation</span></li>
+                    <li><span style="font-size: 10pt;">Compare to existing implementations</span></li>
+                </ul>
+            </ul>
+            <h3>Opportunities to go above and beyond:</h3>
+            <ul>
+                <li><span style="font-size: 10pt;">Exploration of additional approaches to handle numeric data and/or missing data (e.g., effectiveness of different sizes and boundaries of bins as shown on different data sets; incorporating into the algorithm itself)</span></li>
+                <li><span style="font-size: 10pt;">Pruning</span></li>
+                <li><span style="font-size: 10pt;">Experimentation on many more datasets (e.g., how does the algorithm behave as the number of instances and/or attributes changes dynamically?)</span></li>
+                <li><span style="font-size: 10pt;">Implement a technique to handle splitting on multiple attributes in the same node</span></li>
+                <li><span style="font-size: 10pt;">Regression</span></li>
+                <li><span style="font-size: 10pt;">Any other ideas you have</span></li>
+            </ul>
             <h2>Submission</h2>
-            <p>When complete, push your code to a public GitHub repository and answer the following questions.</p>
+            <p>When complete, push your code to a public GitHub repository and answer the accompanying questions.</p>
+
         </article>
     </div>
 

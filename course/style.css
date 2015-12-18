@@ -325,6 +325,7 @@ table#bh tr:nth-child(even) td {
  * Code
  *******************************/
 .code {
+	font-size: 10pt;
     display: block;
     unicode-bidi: embed;
     font-family: monospace;

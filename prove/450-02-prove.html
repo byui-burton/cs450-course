@@ -18,7 +18,48 @@
             <h1>02 Prove : Assignment - kNN Classifier</h1>
 
             <h2>Objective</h2>
-            <p>Content placeholder.</p>
+            <p>Understand a straightforward learning algorithm, the <i>k</i>-Nearest Neighbors algorithm.</p>
+            <h2>Instructions</h2>
+            <p>Add to your experiment shell from the previous assignment. Implement a new algorithm, <i>k</i>-Nearest Neighbors, that can be configured for any size of neighborhood, <i>k</i>. To classify an instance, the algorithm should identify its <i>k</i> nearest neighbors and use their labels to determine the target classification.</p>
+            <h2>Experiment Guidelines</h2>
+            <p>After implementing the algorithm, use it to classify the following datasets:</p>
+            <ol>
+                <li><a href="http://archive.ics.uci.edu/ml/datasets/Iris" target="_blank">Iris</a></li>
+                <li><a href="http://archive.ics.uci.edu/ml/datasets/Car+Evaluation">Car Evaluation</a></li>
+                <li>(Optional)&nbsp;<a href="http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29" target="_blank">Breast Cancer Wisconsin - Original</a> (There are a few different breast cancer datasets with different properties, so it might be more clear to just work with the other two datasets mentioned).</li>
+            </ol>
+            <p>For each one, experiment with different parameters for the algorithm.</p>
+            <p>Also, for each one, also use an existing implementation of the k-Nearest Neighbors algorithm and compare/contrast your results.</p>
+            <h2>Questions for Consideration</h2>
+            <ul>
+                <li>How should categorical data be handled?</li>
+                <li>How should missing data be handled?</li>
+                <li>How should the labels of the neighbors be used (e.g., simply majority or something else)?</li>
+            </ul>
+            <h2>Requirements</h2>
+            <p>As always, you are encouraged to go above and beyond and take initiative in your learning. As described in the syllabus, meeting the minimum standard requirements can qualify you for 93%, but going above and beyond is necessary to get 100%. The following are the expectations for a minimum standard, with a few suggestions for going above and beyond.</p>
+            <h3>Minimum Standard Requirements</h3>
+            <ul>
+                <li><span style="font-size: 10pt;">Implement basic kNN algorithm</span></li>
+                <li><span style="font-size: 10pt;">Handle numeric and nominal data</span></li>
+                <li><span style="font-size: 10pt;">Normalize numeric data</span></li>
+                <li><span style="font-size: 10pt;">Basic experimentation</span></li>
+                <ul>
+                    <li><span style="font-size: 10pt;">Play with different values of K</span></li>
+                    <li><span style="font-size: 10pt;">Compare to existing implementations</span></li>
+                </ul>
+            </ul>
+            <h3>Opportunities to go above and beyond:</h3>
+            <ul>
+                <li><span style="font-size: 10pt;">KD-Tree</span></li>
+                <li><span style="font-size: 10pt;">Significant Experimentation, for example:</span></li>
+                <ul>
+                    <li><span style="font-size: 10pt;">Different distance metrics</span></li>
+                    <li><span style="font-size: 10pt;">Several more datasets</span></li>
+                </ul>
+                <li><span style="font-size: 10pt;">Any other ideas you have</span></li>
+            </ul>
+
 
             <h2>Submission</h2>
             <p>When complete, push your code to a public GitHub repository and answer the following questions.</p>

@@ -15,13 +15,36 @@
  -->
         <article>
 
-            <h1>03 Prove : Assignment - Decision Tree Classifier</h1>
+            <h1>08 Prove : Assignment - Apriori Experimenting</h1>
 
             <h2>Objective</h2>
-            <p>Content placeholder.</p>
-
+            <p>Be able to use Association Rule Mining to discover rules from unlabeled data.</p>
+            <h2>Instructions</h2>
+            <p>For this assignment you will not be implementing the Apriori algorithm, but rather, will be using an existing implementation to discover rules in unlabeled data.</p>
+            <p>Please refer to your preparation reading for this week. We will be using the same dataset and algorithm that they walk through in their example.</p>
+            <p>You can obtain the dataset and algorithm in R by installing and using the "arules" package:</p>
+<div class="code">
+install.packages('arules');
+library(arules);
+data(Groceries);
+</div>
+            <p>Then use the apriori function to generate a set of rules as outlined in the reading.
+            </p>
+            <h2>Experiment Guidelines</h2>
+            <p>Your assignment is to play around with this dataset using different parameters of the Apriori algorithm to identify the following:<br /></p>
+            <ol>
+                <li>The 5 rules you can find with the highest support</li>
+                <li>The 5 rules you can find with the highest confidence</li>
+                <li>The 5 rules you can find with the highest lift</li>
+                <li>The 5 rules you think are the most <span style="text-decoration: underline;"><i>interesting</i></span></li>
+            </ol>
+            <p>For each of these rules, please list the rule along with its support, confidence, and lift, just as you can obtain them from R. For example:</p>
+            <p>{other vegetables,
+                <br /> butter} =&gt; {whole milk} 0.01148958 0.5736041 2.244885</p>
+            <p>After this you are encouraged to go above and beyond these requirements to explore this dataset to a much deeper level, or explore association rules in other datasets.</p>
             <h2>Submission</h2>
-            <p>When complete, push your code to a public GitHub repository and answer the following questions.</p>
+            <p>When complete, answer the accompanying questions in the I-Learn assessment.</p>
+
         </article>
     </div>
 

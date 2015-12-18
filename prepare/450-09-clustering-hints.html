@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 450 - Prepare</title>
+    <link rel="stylesheet" type="text/css" href="../course/style.css" />
+</head>
+
+<body>
+    <div id= "main" class="splash">
+
+<!--         <div id="header">
+            <img class="banner" alt="CS 450 Banner" title="CS 450 Banner" src="../course/cs450.jpg" />
+        </div>
+ -->
+        <article>
+
+            <h1>Helpful Hints for Clustering in R</h1>
+
+            <p>There are many good resources on the Internet that discuss clustering in R. This document is not intended to replace them, or to hold you back from searching and finding them. The intention of this document is to give you context and point you in the right direction in terms of the functions in R that you have at your disposal.</p>
+
+            <h2>Agglomerative Hierarchical Clustering</h2>
+<div class="code">
+# first compute a distance matrix
+distance = dist(as.matrix(data))
+                
+# now perform the clustering
+hc = hclust(distance)
+                
+# finally, plot the dendrogram
+plot(hc)
+</div>
+
+            <h3>Scaling data (normalizing)</h3>
+<div class="code">
+data_scaled = scale(data)
+</div>
+
+            <h3>Using k-means Clustering</h3>
+<div class="code">
+# Cluster into k=5 clusters:
+myClusters = kmeans(data, 5)
+
+# Summary of the clusters
+summary(myClusters)
+
+# Centers (mean values) of the clusters
+myClusters$centers
+
+# Cluster assignments
+myClusters$cluster
+
+# Within-cluster sum of squares and total sum of squares across clusters
+myClusters$withinss
+myClusters$tot.withinss
+
+
+# Plotting a visual representation of k-means clusters
+library(cluster)
+clusplot(data, myClusters$cluster, color=TRUE, shade=TRUE, labels=2, lines=0)</p>
+</div>
+
+            <h3>Creating a 2D plot of the clustering</h3>
+<div class="code">
+library(cluster)
+clusplot(data, myClusters$cluster, color=TRUE, shade=TRUE, labels=2, lines=0)
+</div>
+
+            <h3>A simple for loop in R</h3>
+<div class="code">
+table = NULL;
+for (i in 1:10) {
+  table[i] = i * 2
+}
+</div>
+            <p>Remember, the Web is filled with many more examples and tutorials.</p>
+
+        </article>
+    </div>
+
+
+</body>
+
+</html>

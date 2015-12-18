@@ -15,13 +15,31 @@
  -->
         <article>
 
-            <h1>03 Prove : Assignment - Decision Tree Classifier</h1>
+            <h1>07 Prove : Assignment - Support Vector Machine Experimenting</h1>
 
             <h2>Objective</h2>
-            <p>Content placeholder.</p>
-
+            <p>Be able to appropriately apply Support Vector Machines to classify in data.</p>
+            <h2>Instructions</h2>
+            <p>For this assignment you will not be implementing a Support Vector Machine of your own, but rather, will be using an existing implementation to classify data and experimenting with its parameters.</p>
+            <p>Please read sections 1-4 of the document: <a href="http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf" target="_blank" title="SVM Guide">A Practical Guide to Support Vector Classification</a>. This document is written by the creators of the popular LIBSVM implementation a Support Vector Machine Library.<br /></p>
+            <p>Your assignment is to apply their prescribed procedure (in essence, a grid search for hyper-parameters of the RBF Kernel) to see how good of classification you can make on three datasets.</p>
+            <p>You may use any implementation of the SVM algorithm that you choose, but a popular choice to consider is <a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" target="_blank" title="LIBSVM">LIBSVM</a>. Please note that if you use Weka, it has a wrapper for LIBSVM, but due to licensing requirements, Weka could not distribute the actual library, so you have to download the LIBSVM JAR file separately (see previous link), and include it in your classpath.</p>
+            <p>I actually recommend using R for this assignment, as it will be good practice for you to get familiar with using an algorithm there. The LIBSVM package for R is called, "e1071", and <a href="http://en.wikibooks.org/wiki/Data_Mining_Algorithms_In_R/Classification/SVM" target="_blank" title="SVM Tutorial">this tutorial</a> walks you through the process of how to use it to train and evaluate an SVM. If you do choose this approach, please also glance through:&nbsp;<a href="#" onclick="window.open('%24APPROOT%24/Component/ActivityPlayer?courseid=26859438&amp;enrollmentid=$ENROLLMENTID$&amp;itemid=P8JQ0', '', 'scrollbars, resizable, menubar, width=860, height=600');return false;">A few helpful hints for SVMs in R</a>&nbsp;in I-Learn.
+                <a></a>
+            </p>
+            <h2>Experiment Guidelines</h2>
+            <p>Use a Support Vector Machine to classify each of the following datasets. For each one, report how many different parameters combinations you tried, and then the highest accuracy you obtained along with the parameters you used to obtain this accuracy.&nbsp;In other words try several different combinations of values for gamma and C.</p>
+            <p>Although not required, you are welcome to write code to automate the process of trying different parameters, but do not simply use a predefined "tune" method.</p>
+            <p>You should perform a minimum of 10 parameter combinations on each dataset.</p>
+            <p>The datasets are:</p>
+            <ul>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Connectionist+Bench+%28Vowel+Recognition+-+Deterding+Data%29" target="_blank" title="Vowel Dataset">Vowel</a> - Make sure to use "vowel-context.data" rather than "vowel.data". A nicely prepared version is available for you here: <a href="https://content.byui.edu/items/6a934411-cba6-495f-8294-f53bf2c9828c/1/vowel.csv?.vi=save" target="_blank" title="vowel.csv">vowel.csv</a></li>
+                <li><a href="https://archive.ics.uci.edu/ml/machine-learning-databases/letter-recognition/" target="_blank" title="Letters">OCR for Letter Recognition</a>&nbsp;- You are classifying the letter here, based on visual properties. A nicely prepared version is available here: <a href="https://content.byui.edu/items/3297b671-30ba-4616-8dc5-a1ccca88cf69/1/letters.csv?.vi=save" target="_blank" title="letters.csv">letters.csv</a></li>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Abalone" target="_blank" title="Abalone Dataset">Abalone</a> - Notice that for this one you are predicting the age (number of rings), and be aware that this is a hard one to classify, so don't feel bad if you don't get 90% accuracy. A nicely prepared version is available here: <a href="https://content.byui.edu/items/8c29ece2-7c4e-4b2b-9764-ea309fb5bcb2/1/abalone.csv?.vi=save" target="_blank" title="abalone.csv">abalone.csv</a></li>
+            </ul>
             <h2>Submission</h2>
-            <p>When complete, push your code to a public GitHub repository and answer the following questions.</p>
+            <p>When complete, answer the accompanying questions in the I-Learn assessment.</p>
+
         </article>
     </div>
 
