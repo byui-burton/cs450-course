@@ -16,8 +16,53 @@
         <article>
 
             <h1>01 Prepare : Programming Tools</h1>
-            <p>Content Placeholder.</p>
 
+            <h2>Git and GitHub</h2>
+            <p>This semester, we will be using Git and GitHub to share files. It is expected that you are either familiar with Git already or can come up to speed on your own. You will not need to know everything that can be done with Git, but you will need to know the basics. If you are new to Git or need a refresher, the following may be helpful:</p>
+
+            <ul>
+                <li>Github Tutorial For Beginners -<a href="https://www.youtube.com/watch?v=0fKg7e37bQE" target="_blank">https://www.youtube.com/watch?v=0fKg7e37bQE</a></li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=0fKg7e37bQE" target="_blank"></a>Official Git documentation -&nbsp;<a href="http://git-scm.com/docs/gittutorial" target="_blank">http://git-scm.com/docs/gittutorial</a>&nbsp;- This is actually pretty accessible and helpful compared to the official documentation for most technologies.</li>
+            </ul>
+
+            <h2>Python</h2>
+
+            <p>This semester we will be using Python for our coding exercises. Python is becoming increasingly popular in both industry and academia and is well-suited for data analysis.</p>
+            <p>This is not a "coding" course, and at this point in your program it is assumed that you can come up to speed on a new programming language on your own. But here are a few suggestions that may be beneficial.</p>
+            <ul>
+                <!-- <li>It is recommended to use Python 2.7 (as opposed to the newer 3.4) because it is the version our textbook uses for its examples.</li> -->
+                <li>We will use NumPy, SciPy, matplotlib, and scikit-learn this semester. You can obtain these separately as needed, or you can get a distribution of Python that comes bundled with these and many more science/engineering libraries, such as: Anaconda (&nbsp;<a href="http://continuum.io/downloads" target="_blank">http://continuum.io/downloads</a> )</li>
+                <li>The <a href="http://www.scipy-lectures.org/intro/index.html" target="_BLANK">SciPy documentation</a> has a great tutorial that walks you through the basics of the Python Language, and some of the functionality of NumPy and SciPy. Please read over at least "1.2 The Python Language" and "1.3 NumPy".</li>
+                <li>A more interactive and perhaps more gentle introduction to Python can be found at <a href="http://www.codecademy.com/tracks/python" target="_blank">CodeAcademy</a>. It can also walk you through the basics of the Python language.</li>
+                <li>You can use whatever IDE you prefer (or none at all, see: <a href="https://xkcd.com/378/" target="_blank">https://xkcd.com/378/</a> ), but one good one you might consider is PyCharm ( <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">https://www.jetbrains.com/pycharm/download/</a>&nbsp;). The free community edition is great for our needs.</li>
+            </ul>
+            <h3>Good Programming Practice</h3>
+            <p>While it will not be strictly enforced, as in a programming course, you are encouraged to use good style, code conventions, and programming practice.</p>
+            <p>The <a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html" target="_blank">Google Python Style Guide</a> is a good guide to base your code on. (Be aware that the textbook author does not adhere to these principles).</p>
+            <p>Finally, as a matter of good practice, be aware that if you put statements directly in your python files, it causes side effects when your code is imported into other files because that code is run. To avoid this, it is recommended that you structure your files with a main method as follows. This will ensure that your main method is run if your file is invoked directly and not if it is included in another module.</p>
+            <p>
+
+<div class="code">
+import sys
+
+def main(argv):
+    print "Hello World"
+
+if __name__ == "__main__":
+    main(sys.argv)
+</div>
+
+
+            <h2>R</h2>
+            <p>The other tool that has become very popular in the data mining world is R. It is an open source statistical package that is excels at math, statistics, and graphing. We will use R in conjunction with Python and other tools throughout the course. We will discuss it more later on, and you can wait to install it until that point.</p>
+
+<!--
+            <h2>Java</h2>
+
+            <p>Similarly, if you need to come up to speed on Java, here is a document that shows the basic syntax: <a href="https://content.byui.edu/file/9ab46bcf-2d52-4945-9166-f9ea9e107cba/1/Java%20In%20One%20Gulp.pdf" target="_blank" title="Java in One Gulp">Java in One Gulp</a></p>
+            <div>I would also recommend getting an IDE, such as NetBeans to use for development. It is free and can be downloaded here:&nbsp;<a href="https://netbeans.org/downloads/" target="_blank">https://netbeans.org/downloads/</a> . The basic version is likely sufficient for anything you'll do this semester, but if you think CS 313 may be in your future, I would recommend getting the "All" version.</div>
+-->
 
         </article>
     </div>
