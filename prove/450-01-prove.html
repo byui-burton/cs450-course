@@ -22,23 +22,77 @@
             <p>More than anything, the purpose of this assignment is to make sure you have the pieces in place to be successful in future assignments. Next week, we will program an actual classifier that will make use of the framework you put in place here.</p>
             
             <h2>Instructions</h2>
+            <p>Write a Python program that can:</p>
             <ol>
-                <li>Write a program that can parse data in from a CSV (comma-separated values) file.</li>
-                <li>Please use the popular Iris dataset, found here:&nbsp;<a href="http://archive.ics.uci.edu/ml/datasets/Iris" target="_blank">http://archive.ics.uci.edu/ml/datasets/Iris</a>&nbsp;. It contains 150 instances of three classes of Irises (50 per class), and four numeric attributes (in addition to the class name).<span>(While not required for this assignment, be aware that next week you will need to handle nominal attributes as well.)
+                <li>Load a dataset containing many instances each with a set of attributes and a target value.</li>
+                <li>
+                    <p>Please use the popular Iris dataset, found at: <a href="http://archive.ics.uci.edu/ml/datasets/Iris" target="_blank">http://archive.ics.uci.edu/ml/datasets/Iris</a>&nbsp;. It contains 150 instances of three classes of Irises (50 per class), and four numeric attributes (in addition to the class name).</p>
+                    <p>Please note that this popular dataset is natively included in the Python scikit-learn package. You can easily obtain it with the following code:</p>
+<div class="code">
+from sklearn import datasets
+iris = datasets.load_iris()
+
+# Show the data (the attributes of each instance)
+print(iris.data)
+
+# Show the target values (in numeric format) of each instance
+print(iris.target)
+
+# Show the actual target names that correspond to each number
+print(iris.target_names)
+</div>
+                <p>In future weeks, you will need to be able to load data sets from text files as well, but for this assignment, loading from this datasets package is sufficient.</p>
+
                 </li>
-                <li>Split the dataset into two sets: a training set (70%) and a testing set (30%). Don't forget to randomize order of the dataset before splitting.</li>
-                <li>Create a "HardCoded" classifier that always predicts the first class (e.g., Iris-setosa, but it doesn't really matter which one you choose).</li>
-                <li>Use your new classifier to try to predict values for the test set, and report its overall accuracy.</li>
+
+                <li>Randomize the order of the instances in the dataset. Don't forget that you need to keep the targets matched up with the appropriate instance.</li>
+
+                <li>Split the dataset into two sets: a training set (70%) and a testing set (30%).</li>
+
+                <li>Create a class for a "HardCoded" classifier with the following methods:</li>
+
+                <ul>
+                    <li>train: accepts a training dataset (the instances and their corresponding targets). This method does not need to <em>do</em> anything for the HardCoded classifier.</li>
+                    <li>predict: accepts an array of instances without targets, and for each one, predicts a class, and returns an array of predictions. For the "HardCoded" classifier the prediction can always be the same class (e.g., 0 or "setosa", but it doesn't really matter which one you choose).</li>
+                </ul>
+
+                <li>Instantiate your new classifier, "train" it with your training data, then use it to make predictions on the test data.</li>
+
+                <li>Determine the accuracy of your classifier's predictions and report the result as a percentage.</li>
+
                 <li>Create a new public repository at GitHub, and push your code to it.</li>
             </ol>
 
-            <p>You should code this assignment in Python.</p>
+            <h2>Requirements</h2>
+            <p>As always, you are encouraged to go above and beyond and take initiative in your learning. As described in the syllabus, meeting the minimum standard requirements can qualify you for 93%, but going above and beyond is necessary to get 100%. The following are the expectations for the minimum standard, with a few suggestions for going above and beyond.</p>
+
+            <h3>Minimum Standard Requirements</h3>
+            <ul>
+                <li>The Iris dataset can be loaded</li>
+                <li>The order of the instances can be randomized</li>
+                <li>The dataset can be split into a training / test set</li>
+                <li>HardCoded classifier class is created with train and predict methods</li>
+                <ul>
+                    <li>Train accepts training data</li>
+                    <li>Predict makes a prediction for the data it receives (at this point, it always predicts the same answer)</li>
+                </ul>
+                <li>HardCoded classifier can be "trained" and "tested" on the Iris dataset and accuracy on the training set is reported.</li>
+            </ul>
+
+            <h3>Opportunities to go above and beyond:</h3>
+            <ul>
+                <li>In addition to loading data from the scikit-learn package, also, load data from CSV/text files</li>
+                <li>Handling non-numeric data types in CSV/text files</li>
+                <li>Adding user interface components (command line is just fine) to specify various parameters of an experiment (e.g., what dataset to use, what algorithm to use, how to split the training/testing data)</li>
+                <li>Adding <em>n</em>-fold cross validation</li>
+                <li>Any other ideas you have</li>
+            </ul>            
             
 <!--             <p>You are encouraged to use Python and become familiar with it, because we will be using it throughout the semester to experiment with existing algorithms, and it will be a valuable tool for you to know. However, you may use whatever programming language you like (e.g. Java, Python, R, C#, C++, etc.) for this and the subsequent programming projects where you implement machine learning algorithms.</p>
  -->
 <!--             <p>Also, while not required, you are recommended to use the Weka API (weka.jar) to help you in your programming. For example, there are classes and methods that facilitate reading files from CSV or ARFF formats, and filtering/preprocessing data. For more information about using Weka in your code see:&nbsp;<a href="https://weka.wikispaces.com/Use+WEKA+in+your+Java+code" target="_blank">https://weka.wikispaces.com/Use+WEKA+in+your+Java+code</a></p> -->
             <h2>Submission</h2>
-            <p>When complete, push your code to a public GitHub repository and answer the questions in the attached PDF. Then submit this PDF to I-Learn.</p>
+            <p>When complete, push your code to a public GitHub repository and answer the questions in the <a href="../forms/450-01-prove-form.pdf" target="_BLANK">submission PDF</a>. Then submit this PDF to I-Learn.</p>
         </article>
     </div>
 
