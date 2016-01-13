@@ -1,0 +1,33 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+1. Please provide the URL of your public GitHub repository.
+
+
+2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
+
+
+3. Briefly describe how you handled the distance between nominal attributes.
+
+
+4. Briefly describe your process for handling numeric data on different scales (i.e., normalizing).
+
+
+5. Describe your results for the Iris data set. (For example, what level of accuracy did you see for different values of K? How did your implementation compare to existing implementations?)
+
+
+6. Describe your results for the Car data set. (For example, what level of accuracy did you see for different values of K? How did your implementation compare to existing implementations?)
+
+
+7. Describe anything you did to go above and beyond the minimum standard requirements.
+
+
+8. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+
+9. Provide a brief justification (1-2 sentences) for selecting that category.
+
