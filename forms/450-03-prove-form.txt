@@ -1,0 +1,34 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+
+1. Please provide a link to your classifier in your public GitHub repo.
+
+2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
+
+3. Briefly describe how you handled numeric data.
+
+4. Briefly describe your you handled missing data.
+
+5. Describe your results for the Iris data set. (e.g., What was the size of the tree? How did your implementation compare to existing implementations? How did your decision tree compare to your kNN classifier)
+
+6. Include a textual representation of the tree your algorithm produced for the iris dataset.
+
+7. Describe your results for the Lenses data set. (e.g., What was the size of the tree? How did your implementation compare to existing implementations?)
+
+8. Include a textual representation of the tree your algorithm produced for the Lenses dataset.
+
+9. Describe your results for the Voting data set. (e.g., What was the size of the tree? How did your implementation compare to existing implementations?)
+
+10. Include ___a portion of___ the representation of the tree your algorithm produced for the Voting dataset.
+
+11. If applicable, please describe anything you did to go above and beyond and the results you saw.
+
+12. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+13. Provide a brief justification (1-2 sentences) for selecting that category.
+
