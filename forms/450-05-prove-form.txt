@@ -1,0 +1,23 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+
+1. Please provide a link to your classifier in your public GitHub repo.
+
+
+For each of the following questions, indicate "True" or "False" on the line after the question.
+
+2. A data structure is created to hold a node (a.k.a. neuron)
+
+3. A set of input weights is stored for each node.
+
+4. A layer of nodes (of any number) can be easily created.
+
+5. Bias input is accounted for in each node.
+
+6. Input can be taken for an actual dataset instance (e.g., Iris) and each node in the layer produces the appropriate value (0 or 1) according to its weights.
+
+7. Data can be loaded for both the Iris and the Pima Indian Dataset.
+
+8. Data is appropriately normalized before being given to the Neural Network.
+
+
