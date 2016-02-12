@@ -1,0 +1,22 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+
+1. Please provide a link to your classifier in your public GitHub repo.
+
+
+For each of the following questions, indicate "True" or "False" on the line after the question.
+
+2. Classifier can be built with an arbitrary number of layers and nodes.
+
+3. The number of weights for the first layer is determined by the number of attributes.
+
+4. Biases are present at every layer.
+
+5. Values can be computed at the output layer (by computing the value of every node at every layer)
+
+6. A sigmoid function is used for the activation function of each node.
+
+7. An instance can be classified (albeit not very accurately) with the network.
+
+8. A complete dataset (e.g., iris) can be classified and the overall accuracy reported.
+

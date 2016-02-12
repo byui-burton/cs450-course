@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 450 - Prove</title>
+    <link rel="stylesheet" type="text/css" href="../course/style.css" />
+</head>
+
+<body>
+    <div id= "main" class="splash">
+
+<!--         <div id="header">
+            <img class="banner" alt="CS 450 Banner" title="CS 450 Banner" src="../course/cs450.jpg" />
+        </div>
+ -->
+        <article>
+
+            <h1>06 Prove : Assignment - Neural Network Classifier</h1>
+
+
+            <h2>Objective</h2>
+            <p>Understand Neural Networks, in particular, back-propagation for multi-layer perceptron networks.</p>
+            <h2>Instructions</h2>
+            <p>Add to your experiment shell from previous assignments. Implement a multi-layer perceptron neural network.</p>
+            <p>Your assignment this week is to <b>finish</b> the neural network you previously started (by converting it to a mult-layer network and adding backpropagation for training), and then to <b>experiment</b> with it on various datasets.</p>
+            <h2>Experiment Guidelines</h2>
+            <p>After implementing the algorithm, use it to classify the following datasets:</p>
+            <ol>
+                <li>Iris</li>
+                <li><a href="https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes" target="_BLANK">Pima Indian Diabetes</a></li>
+            </ol>
+            <p>For each one, experiment with different parameters for the algorithm.</p>
+            <p>Also, for each one, also use an existing implementation of a multi-layer perceptron network and compare/contrast your results (Note: in Weka, this is called MultilayerPerceptron under the "functions" category).</p>
+            <h3>Minimum Standard Requirements</h3>
+            <ul>
+                <li>Implement the basic MLP algorithm</li>
+                <li>Handle nominal and numeric data (if you choose, nominal data can be handled via pre-processing)</li>
+                <li>Produce a graph of your learner's accuracy on the validation set (or the training set if necessary) per iteration of the algorithm.</li>
+                <li>Basic experimentation</li>
+                <ul>
+                    <li>Use the supplied datasets</li>
+                    <li>Try a few different configurations (# of layers, # of nodes per layer)</li>
+                    <li>Produce graphs of the training progress</li>
+                    <li>Compare overall results to existing implementations of MLP</li>
+                </ul>
+            </ul>
+            <h3>Opportunities To Go Above And Beyond:</h3>
+            <ul>
+                <li>More elaborate stopping criteria</li>
+                <li>Significant experimentation (Seek out additional datasets, compare and contrast many different configurations, experiment with different strategies for starting weights and normalization, etc.)</li>
+                <li>Regression</li>
+                <li>Different activation functions (e.g., tanh)</li>
+                <li>Implement batch and sequential update, and compare results</li>
+                <li>Using momentum</li>
+                <li>Any other ideas you have</li>
+            </ul>
+            <h2>Questions for Consideration</h2>
+            <ul>
+                <li>How should categorical data be handled?</li>
+                <li>How many layers should be in your network?</li>
+                <li>How many nodes should be in each hidden layer?</li>
+                <li>How many nodes should be in the output layer (e.g., one? one per class?)?</li>
+                <li>When should learning be stopped?</li>
+            </ul>
+            <h2>Submission</h2>
+            <p>When complete, push your code to a public GitHub repository. Then submit a PDF with your answers to the following questions:</p>
+            <ol>
+                <li>Please submit a link to your GitHub repository for your class.</li>
+                <li>Describe your overall approach to implementing the algorithm in code. How are your classes/data structures organized? How do you keep track of the necessary pieces for back-propagation.</li>
+                <li>Describe the part of the assignment that gave you the most trouble, and how you overcame it.</li>
+                <li>Produce at least one graph to show the training progress for the Iris dataset.</li>
+                <li>Compare your results on the Iris dataset to those of an existing implementation.</li>
+                <li>Produce at least one graph to show the training progress for the Diabetes dataset.</li>
+                <li>Compare your results on the Diabetes dataset to those of an existing implementation.</li>
+                <li>Describe any efforts you made to go above and beyond.</li>
+                <li>
+                    <p>Please state which category you feel best describes your assignment and give a 1-2 sentence justification for your choice: A) Some attempt was made, B) Developing, but significantly deficient, C) Slightly deficient, but still mostly adequate, D) Meets requirements, E) Shows creativity and excels above and beyond requirements.</p>
+                </li>
+            </ol>
+            <p>Please note that in order to accommodate the graphs that you will need to have in your write up, this will not be an plain text submission file like the other assignments, but rather, you will upload your own PDF document.</p>
+
+        </article>
+    </div>
+
+
+</body>
+
+</html>
