@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 450 - Prepare</title>
+    <link rel="stylesheet" type="text/css" href="../course/style.css" />
+</head>
+
+<body>
+    <div id= "main" class="splash">
+
+<!--         <div id="header">
+            <img class="banner" alt="CS 450 Banner" title="CS 450 Banner" src="../course/cs450.jpg" />
+        </div>
+ -->
+        <article>
+
+            <h1>Helpful Hints for using SVMs in R</h1>
+
+            <p>As noted, you may use any implementation of the SVM algorithm that you choose, and I would recommend reading over <a href="http://en.wikibooks.org/wiki/Data_Mining_Algorithms_In_R/Classification/SVM" target="_blank" title="SVM Tutorial">this tutorial</a>, which will walk you through the process of how to use the LIBSVM library.</p>
+            <p>A few additionally notes that may be helpful.</p>
+            <ul>
+                <li>To install the LIBSVM package you need to run:</li>
+                <ul>
+                    <li><code>install.packages('e1071', dependencies = TRUE)</code></li>
+                </ul>
+                <li>Then, to load it, you run:</li>
+                <ul>
+                    <li><code>library (e1071)</code></li>
+                </ul>
+                <li>The RBF kernel to experiment with is called "radial"</li>
+                <li>If the column you are trying to predict is numeric, the SVM algorithm will default to regression. You can force it to use classification with a type="C" parameter.</li>
+                <li>In order to use the <code>testset[,-2]</code> notation, you need to know which index your class value is, and remember that it is 1-based.</li>
+                <li>The tutorial above shows you how to create a confusion matrix with a command such as: <code>confusion_matrix&nbsp;&lt;- table(pred = prediction, true = testset[,2])</code></li>
+                <li>You can also compute the accuracy using something like the following (assuming the dataset is "vowel_test" and the column of interest is called "Class":</li>
+                <ul>
+                    <li><code>agreement = prediction == vowel_test$Class</code></li>
+                    <li><code>accuracy = prop.table(table(agreement))</code></li>
+                </ul>
+            </ul>
+
+
+
+
+
+        </article>
+    </div>
+
+
+</body>
+
+</html>
