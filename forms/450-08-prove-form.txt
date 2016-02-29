@@ -1,0 +1,29 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+
+1. Please list the 5 rules you found with the highest support.
+
+
+2. Please list the 5 rules you found with the highest confidence.
+
+
+3. Please list the 5 rules you found with the highest lift.
+
+
+4. Please list the 5 rules you found that you think are the most interesting.
+
+
+5. Please describe anything else you did for this assignment
+
+
+
+6. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+
