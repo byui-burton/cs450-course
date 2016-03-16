@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 450 - Prepare</title>
+    <link rel="stylesheet" type="text/css" href="../course/style.css" />
+</head>
+
+<body>
+    <div id= "main" class="splash">
+
+<!--         <div id="header">
+            <img class="banner" alt="CS 450 Banner" title="CS 450 Banner" src="../course/cs450.jpg" />
+        </div>
+ -->
+        <article>
+
+            <h1>Helpful Hints for SNA in R</h1>
+
+            <p>You are welcome to use any language process you would like to compute the centrality measures for your homework. But by popular request, here are some helpful hints to get you started with SNA in R.</p>
+
+            <p>There are probably better ways to do much of this, and certainly more complete examples on the Internet, but perhaps this can point you in a good direction.</p>
+
+            <h2>Libraries</h2>
+            <p>I have found these two libraries helpful for plotting and computing social network values in R:</p>
+
+            <ul>
+                <li><code>igraph</code></li>
+                <li><code>sna</code></li>
+            </ul>
+
+            <h2>Getting from a CSV to a graph</h2>
+
+<div class="code">
+# Reading an edge list
+mommyEdgesTwitter = read.csv("MommyMentionMap.csv", header = FALSE)
+twitterGraph = graph.data.frame(mommyEdgesTwitter)
+</div>
+
+            <h2>Basic Plotting</h2>
+
+<div class="code">
+# Plot a simple graph using Fruchterman-Reingold layout
+# Assuming a graph "g"
+layout1 = layout.fruchterman.reingold(g)
+layout2 = layout.auto(g)
+plot(g, layout=layout2)
+</div>
+
+            <p>Be aware that computing layouts and plotting graphs can take a while for large graphs. In my opinion, these basic R libraries are not well-suited for nice layouts of large graphs.</p>
+
+
+            <h2>Basic Calculations</h2>
+<div class="code">
+# Assuming a graph "g"
+
+# Compute density
+graph.density(g)
+
+# Compute centralization measures for all nodes in the graph
+dc = centralization.degree(g)
+cc = centralization.closeness(g)
+bc = centralization.betweenness(g)
+
+# For each of the centralization measures, the value for every
+# node is stored in a list $res (e.g., dc$res)
+</div>
+
+            <p>Remember, the Web is filled with many more examples and tutorials.</p>
+
+        </article>
+    </div>
+
+
+</body>
+
+</html>
