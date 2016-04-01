@@ -1,0 +1,76 @@
+After completing your project report, please self evaluate the project and the contribution of each member of the team (including yourself). For each question, please use the following scale:
+
+--------------------------------------------------
+A - Not present or extremely minimal
+B - Developing but significantly deficient
+C - Slightly deficient but still mostly adequate
+D - Meets requirements
+E - Above and beyond expectations
+---------------------------------------------------
+
+For each question, place the letter corresponding to the desired category in front of the question so that:
+
+ - 1. Demonstrates understanding of the business needs / context of the data
+ - 2. Demonstrates ability to handle non-trivial dataset
+...
+
+Becomes something like:
+
+D - 1. Demonstrates understanding of the business needs / context of the data
+E - 2. Demonstrates ability to handle non-trivial dataset
+...
+
+Then, provide a description / justification at the end.
+
+
+********************
+* The Project
+********************
+
+ - 1. Demonstrates understanding of the business needs / context of the data
+ - 2. Demonstrates ability to handle non-trivial dataset
+ - 3. Demonstrates proper algorithm selection and application
+ - 4. Discovered something interesting / of value
+ - 5. Demonstrates understanding of limitations of the solution and potential ethical issues
+ - 6. Conversant in appropriate terminology and technologies
+ - 7. Overall Project
+
+8. Please provide any overall comments about the project and a justification for your selections here:
+
+
+********************
+* Your Contribution
+********************
+
+1. Name:
+ - 2. Fulfilled assigned tasks and took initiative
+ - 3. Helped others learn and succeed
+ - 4. Attendance and team communication
+ - 5. Overall Contribution
+
+6. Please briefly describe your contribution and justify your selections above:
+
+********************
+* Teammate #1
+********************
+
+1. Name:
+ - 2. Fulfilled assigned tasks and took initiative
+ - 3. Helped others learn and succeed
+ - 4. Attendance and team communication
+ - 5. Overall Contribution
+
+6. Please briefly describe this team member's contribution and justify your selections above:
+
+********************
+* Teammate #2 (If applicable)
+********************
+
+1. Name:
+ - 2. Fulfilled assigned tasks and took initiative
+ - 3. Helped others learn and succeed
+ - 4. Attendance and team communication
+ - 5. Overall Contribution
+
+6. Please briefly describe this team member's contribution and justify your selections above:
+
