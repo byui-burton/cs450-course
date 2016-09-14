@@ -1,0 +1,35 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+Name:
+
+1. Please provide the URL of your public GitHub repository.
+
+
+
+For questions 2-6, please type "True" or "False" in front of the question number.
+
+2. My experiment shell can correctly load the Iris dataset:
+
+3. My experiment shell randomizes the order of the instances (making sure to keep instances lined up with their appropriate targets) it and splits the data into a training set (70%) and a test set (30%)?
+
+4. I have created a HardCoded classifier class with two methods: train and predict. The train method accepts training data (including targets). The predict method returns a prediction or classification for each instance it receives.
+
+5. The Experiment Shell, processes the data, passes the training data to the classifier’s train method, the test data to the predict method, and then compares the predicted values against the correct answers, to produce an overall accuracy (on the test set).
+
+6. I have run the HardCoded classifier on the Iris dataset and obtained a result.
+
+7. What accuracy do you get when running the HardCoded classifier on the Iris dataset and why do you think that is?
+
+
+
+
+
+8. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but signficantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+9. Provide a brief justification (1-2 sentences) for selecting that category: 
+
