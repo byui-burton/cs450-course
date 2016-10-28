@@ -23,10 +23,14 @@
             <p>For this assignment you will not be implementing a Support Vector Machine of your own, but rather, will be using an existing implementation to classify data and experimenting with its parameters.</p>
             <p>Please read sections 1-4 of the document: <a href="http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf" target="_blank" title="SVM Guide">A Practical Guide to Support Vector Classification</a>. This document is written by the creators of the popular LIBSVM implementation a Support Vector Machine Library.<br /></p>
             <p>Your assignment is to apply their prescribed procedure (in essence, a grid search for hyper-parameters of the RBF Kernel) to see how good of classification you can make on three datasets.</p>
+            
             <p>You may use any implementation of the SVM algorithm that you choose, but a popular choice to consider is <a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" target="_blank" title="LIBSVM">LIBSVM</a>. Please note that if you use Weka, it has a wrapper for LIBSVM, but due to licensing requirements, Weka could not distribute the actual library, so you have to download the LIBSVM JAR file separately (see previous link), and include it in your classpath.</p>
+
             <p>I actually recommend using R for this assignment, as it will be good practice for you to get familiar with using an algorithm there. The LIBSVM package for R is called, "e1071", and <a href="http://en.wikibooks.org/wiki/Data_Mining_Algorithms_In_R/Classification/SVM" target="_blank" title="SVM Tutorial">this tutorial</a> walks you through the process of how to use it to train and evaluate an SVM. If you do choose this approach, please also glance through: <a href="../prepare/450-07-svm-hints.html">A few helpful hints for SVMs in R</a>&nbsp;in I-Learn.
-                <a></a>
             </p>
+
+            <p>In addition, I also recommend reading, <a href="http://www.johndcook.com/blog/r_language_for_programmers/" target="_BLANK">R for Programmers</a> which mentions some of the basics and subtleties of R for those with a background in more traditional programming languages.</p>
+
             <h2>Experiment Guidelines</h2>
             <p>Use a Support Vector Machine to classify each of the following datasets. For each one, report how many different parameters combinations you tried, and then the highest accuracy you obtained along with the parameters you used to obtain this accuracy.&nbsp;In other words try several different combinations of values for gamma and C.</p>
             <p>Although not required, you are welcome to write code to automate the process of trying different parameters, but do not simply use a predefined "tune" method.</p>
