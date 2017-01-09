@@ -52,7 +52,7 @@ print(iris.target_names)
                 <li>Create a class for a "HardCoded" classifier with the following methods:</li>
 
                 <ul>
-                    <li>train: accepts a training dataset (the instances and their corresponding targets). This method does not need to <em>do</em> anything for the HardCoded classifier.</li>
+                    <li>fit (or, you could call it, "train"): accepts a training dataset (the instances and their corresponding targets). This method does not need to <em>do</em> anything for the HardCoded classifier.</li>
                     <li>predict: accepts an array of instances without targets, and for each one, predicts a class, and returns an array of predictions. For the "HardCoded" classifier the prediction can always be the same class (e.g., 0 or "setosa", but it doesn't really matter which one you choose).</li>
                 </ul>
 
@@ -71,9 +71,9 @@ print(iris.target_names)
                 <li>The Iris dataset can be loaded</li>
                 <li>The order of the instances can be randomized</li>
                 <li>The dataset can be split into a training / test set</li>
-                <li>HardCoded classifier class is created with train and predict methods</li>
+                <li>HardCoded classifier class is created with fit/train and predict methods</li>
                 <ul>
-                    <li>Train accepts training data</li>
+                    <li>Fit (or Train) accepts training data</li>
                     <li>Predict makes a prediction for the data it receives (at this point, it always predicts the same answer)</li>
                 </ul>
                 <li>HardCoded classifier can be "trained" and "tested" on the Iris dataset and accuracy on the training set is reported.</li>
